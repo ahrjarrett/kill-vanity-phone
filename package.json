@@ -2,23 +2,38 @@
   "name": "kill-vanity-phone",
   "version": "1.0.0",
   "description": "A dead simple node module that listens on the command line for a vanity phone number (e.g. '(855) CALL-NOW' or 'BEERS4BRETT') and copies the conversion to the system clipboard.",
-  "author": "Andrew Jarrett",
+  "author": {
+    "name": "Andrew Jarrett",
+    "email": "ahrjarrett@gmail.com",
+    "url": "https://thegrepper.com"
+  },
   "maintainers": [
-    { "name": "Andrew",
+    {
+      "name": "Andrew",
       "email": "ahrjarrett@gmail.com",
       "web": "https://thegrepper.com"
     }
   ],
-  "main": "index.js",
+  "main": "cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ahrjarrett/kill-vanity-phone"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node cli"
   },
-  "keywords": ["vanity phone number", "clipboard", "phone numbers"],
-  "license": "MIT",
+  "keywords": [
+    "vanity phone number",
+    "clipboard",
+    "phone numbers",
+    "cli",
+    "commandline",
+    "phone number utility"
+  ],
+  "license": "BSD",
+  "bin": {
+    "kill-vanity-phone": "./cli.js"
+  },
   "dependencies": {
     "copy-paste": "1.3.0"
   }
